@@ -47,7 +47,9 @@ const Option = ({ Optionkey, children }: OptionsProps) => {
   const { activeOption, setActiveOption } = useSelectContext();
 
   const isActive = activeOption === Optionkey;
-  const className = `p-2 ${isActive ? 'bg-red-600' : 'bg-white'} border-2`;
+  const className = `p-2 ${
+    isActive ? 'bg-black text-white' : 'bg-white text-black'
+  } border-2`;
 
   return (
     <option
